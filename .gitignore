@@ -4,5 +4,9 @@ typings
 packages
 bin
 obj
+dist
+publish
+CoffeeShop/App/**/*.js
+CoffeeShop/App/**/*.js.map
 .vs
-*.csproj.user
+*.user
