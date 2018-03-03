@@ -1,0 +1,90 @@
+﻿@using NLog.LayoutRenderers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <meta name="description" content="Lokalt producerat kaffe från Åseda, Småland">
+    <meta name="author" content="Smålands Rosteri AB">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="@Html.VersionedFile("~/dist/css/app.css")">
+
+    <!-- Fixes for IE8 -->
+    <!--[if lt IE 9]>
+        <script src="@Html.VersionedFile("~/dist/ie8/ie8.js")"></script>
+        <style>
+            .ng-hide {
+                display: none !important;
+            }
+        </style>
+    <![endif]-->
+
+    <script src="@Html.VersionedFile("~/dist/js/vendors.js")"></script>
+    <script src="@Html.VersionedFile("~/dist/js/app.js")"></script>
+    @Html.SusnetCounter(ViewBag.SusnetCounterID as string)
+</head>
+<body>
+<div id="wrapper">
+    <header class="fixed-top">
+        <div class="gradient-in"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-7">
+                    <div class="row">
+                            <nav class="navbar navbar-default" ng-controller="NavbarController as navbarController">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle btn-link" data-toggle="collapse" data-target=".navbar-collapse">
+                                        INNEHÅLL
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown" ng-class="{ active: navbarController.isActive('/Kaffe')}">
+                                            <a ng-href="javascript:void()" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kaffe <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li ng-class="{ active: navbarController.isActive('/Kaffe/Sortiment/LokaltProducerat')}"><a ng-href="Kaffe/Sortiment/LokaltProducerat" data-toggle="collapse" data-target=".navbar-collapse.in">Lokalt producerat</a></li>
+                                                <li ng-class="{ active: navbarController.isActive('/Kaffe/Sortiment/Kärnkaffe')}"><a ng-href="Kaffe/Sortiment/Kärnkaffe" data-toggle="collapse" data-target=".navbar-collapse.in">Kärnkaffe</a></li>
+                                                <li ng-class="{ active: navbarController.isActive('/Kaffe/Prislista')}"><a ng-href="Kaffe/Prislista" data-toggle="collapse" data-target=".navbar-collapse.in">Prislista</a></li>
+                                            </ul>
+                                        </li>
+                                        <li ng-class="{ active: navbarController.isActive('/DackeKulturFörening')}"><a ng-href="DackeKulturFörening" data-toggle="collapse" data-target=".navbar-collapse.in">Dacke kulturförening</a></li>
+                                        <li ng-class="{ active: navbarController.isActive('/ÅsedaHIFI')}"><a ng-href="ÅsedaHIFI" data-toggle="collapse" data-target=".navbar-collapse.in">Åseda <i>HIFI</i></a></li>
+                                        <li ng-class="{ active: navbarController.isActive('/Kontakt')}"><a ng-href="Kontakt" data-toggle="collapse" data-target=".navbar-collapse.in">Kontakt</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                </div>
+                <div class="col-xs-5">
+                    <table><tr><td>
+                                        <!-- Href must be "/#/" in order to prevent IE8 to navigate to the root page twice. This causes Susnte counter to increment twice when user clicks the link once. -->
+                                        <a ng-href="/#/"><img class="pull-left img-responsive" src="~/Images/smålands kafferosteri logo.jpg" /></a>
+                    </td><td>
+                                        <img class="pull-right img-responsive" src="~/Images/Småland_vapen.png" />
+                    </td></tr></table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+    <div class="push"></div>
+</div>
+<footer class="footer container text-center">
+    <hr class="row"/>
+    <p>
+        Smålands kafferosteri.&nbsp;&nbsp;&nbsp;
+        <span class="text-nowrap"><span class="glyphicon glyphicon-phone-alt"></span> 0708-45 44 42</span>&nbsp;&nbsp;&nbsp;
+        <span class="text-nowrap"><a ng-href="Kontakt"><span class="glyphicon glyphicon glyphicon-pencil"></span> kaffe@rosteriet.com</a></span>
+    </p>
+</footer>
+</body>
+</html>

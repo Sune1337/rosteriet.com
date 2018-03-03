@@ -1,0 +1,52 @@
+﻿@model CoffeeShop.Models.PricelistItem
+@helper PrintPrice(decimal priceLow, decimal priceHigh)
+{
+    var template = "";
+    if (priceLow > 0)
+    {
+        template += "{0}";
+    }
+    if (priceHigh > 0)
+    {
+        if (priceLow > 0)
+        {
+            template += '-';
+        }
+        template += "{1}";
+    }
+
+    if (priceLow > 0 || priceHigh > 0)
+    {
+        template += ":-";
+    }
+
+    var priceString = string.Format(template, priceLow, priceHigh);
+    @priceString
+}
+<div class="row v-offset-1">
+    <div class="col-sm-6"><b>@Model.Name</b>
+    </div>
+    @if (Model.Price1Low > 0 || Model.Price1High > 0 || Model.Price2Low > 0 || Model.Price2High > 0 || Model.Price3Low > 0 || Model.Price3High > 0)
+    {
+        <div class="col-sm-6 visible-xs">
+            <div class="row">
+                <div class="col-xs-4"><b><small>Pris 1</small></b>
+                </div>
+                <div class="col-xs-4"><b><small>Pris 2</small></b>
+                </div>
+                <div class="col-xs-4"><b><small>Pris 3</small></b>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-xs-4"><b>@PrintPrice(Model.Price1Low, Model.Price1High)</b></div>
+            <div class="col-xs-4"><b>@PrintPrice(Model.Price2Low, Model.Price2High)</b></div>
+            <div class="col-xs-4"><b>@PrintPrice(Model.Price3Low, Model.Price3High)</b></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">@Model.Description</div>
+</div>

@@ -1,0 +1,21 @@
+﻿header {
+    .gradient-in {
+        position: absolute;
+        width: 100%;
+        height: @header-height;
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    /* Fixed header when screensize is small or larger. */
+    body {
+        padding-top: @header-height;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: @zindex-navbar - 1;
+    }
+}

@@ -1,0 +1,90 @@
+﻿@model List<CoffeeShop.Models.PricelistItem>
+<div class="row hidden-xs v-offset-2">
+    <div class="col-sm-6">
+        <b>PRODUKT</b>
+    </div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-xs-4">
+                <b>Pris 1</b>
+            </div>
+            <div class="col-xs-4">
+                <b>Pris 2</b>
+            </div>
+            <div class="col-xs-4">
+                <b>Pris 3</b>
+            </div>
+        </div>
+    </div>
+</div>
+
+@foreach (var item in Model)
+{
+    @Html.Partial("PricelistItem", item)
+}
+
+<div class="row v-offset-2">
+    <div class="col-xs-12">
+        <p>
+            <b><small>PRIS 1 - Högsta o lägsta pris per kg beroende på förbrukning</small></b>
+        </p>
+        <p>
+            <b><small>PRIS 2 - Som ovan inklusive hyra av kaffemaskin 1 (Minst 40Kg / månad)</small></b>
+        </p>
+        <p>
+            <b><small>PRIS 2 - Som ovan inklusive hyra av kaffemaskin 2 (Minst 40Kg / månad)</small></b>
+        </p>
+    </div>
+</div>
+<div class="row v-offset-2">
+    <div class="col-xs-12">
+        <p>
+            <small>Fri leverans varannan vecka. Kassarabatt 2% vid kontant betalning. Samtliga kaffepriser exkl 12% moms.</small>
+        </p>
+        <p>
+            <small>* Innehållet varierar beroende på tillgång.</small>
+        </p>
+    </div>
+</div>
+
+<div class="row v-offset-2">
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="img-responsive" src="~/Images/Bonamat_Mondo_2.png" alt="Bonamat Mondo 2"/>
+            </div>
+            <div class="col-xs-8">
+                <p>
+                    <b>Kaffemaskin 1</b>
+                </p>
+                <p>
+                    Bonamat Mondo 2
+                </p>
+                <p>
+                    Kvalitetsbryggare som håller i decennier. 12 koppar på 5 min.
+                </p>
+                <p>
+                    Kontantpris: 3900:- (Inklusive underhåll)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-xs-8">
+                <p><b>Kaffemaskin 2</b></p>
+                <p>Bonamat Freshmore G</p>
+                <p>
+                    Maler och färskbrygger. Matas med hela bönor. 25s per kopp.
+                </p>
+                <p>
+                    Kontantpris: 24900:-
+                    (Inklusive underhåll)
+                </p>
+            </div>
+            <div class="col-xs-4">
+                <img class="img-responsive" src="~/Images/Bonamat_Freshmore_G.png" alt="Bonamat Freshmore G"/>
+            </div>
+        </div>
+    </div>
+</div>

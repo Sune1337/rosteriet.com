@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E774C13C-C136-4A44-B786-605F87A3986C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoffeeShop</RootNamespace>
+    <AssemblyName>CoffeeShop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.3\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App\Templates\DackeKulturFörening\images\dacke kulturförening.png" />
+    <Content Include="App\Templates\Kontakt.html" />
+    <Content Include="App\Templates\DackeKulturFörening\Index.html" />
+    <Content Include="App\Templates\EmailSent.html" />
+    <Content Include="App\Templates\Home.html" />
+    <Content Include="App\Templates\Kaffe\Sortiment\Kärnkaffe.html" />
+    <Content Include="App\Templates\Kaffe\Sortiment\LokaltProducerat.html" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\åsedahifi2.png" />
+    <Content Include="App\Templates\ÅsedaHIFI\Index.html" />
+    <Content Include="dist\css\app.css" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\fonts\open-sans-v13-latin-600.svg" />
+    <Content Include="dist\fonts\open-sans-v13-latin-700.svg" />
+    <Content Include="dist\fonts\open-sans-v13-latin-regular.svg" />
+    <Content Include="dist\ie8\ie8.js" />
+    <Content Include="dist\js\app.js" />
+    <Content Include="dist\js\vendors.js" />
+    <Content Include="Global.asax" />
+    <Content Include="dist\fonts\open-sans-v13-latin-600.eot" />
+    <Content Include="dist\fonts\open-sans-v13-latin-600.ttf" />
+    <Content Include="dist\fonts\open-sans-v13-latin-600.woff" />
+    <Content Include="dist\fonts\open-sans-v13-latin-600.woff2" />
+    <Content Include="dist\fonts\open-sans-v13-latin-700.eot" />
+    <Content Include="dist\fonts\open-sans-v13-latin-700.ttf" />
+    <Content Include="dist\fonts\open-sans-v13-latin-700.woff" />
+    <Content Include="dist\fonts\open-sans-v13-latin-700.woff2" />
+    <Content Include="dist\fonts\open-sans-v13-latin-regular.eot" />
+    <Content Include="dist\fonts\open-sans-v13-latin-regular.ttf" />
+    <Content Include="dist\fonts\open-sans-v13-latin-regular.woff" />
+    <Content Include="dist\fonts\open-sans-v13-latin-regular.woff2" />
+    <Content Include="App\Templates\DackeKulturFörening\images\dacke kulturförening.xcf" />
+    <None Include="gulpfile.js" />
+    <Content Include="Images\Bonamat_Freshmore_G.png" />
+    <Content Include="Images\Bonamat_Mondo_2.png" />
+    <Content Include="Images\dubbelknäppt.png" />
+    <Content Include="Images\garanterat-certifierat.png" />
+    <Content Include="Images\hantverk.jpg" />
+    <Content Include="Images\kärnkaffe-kaffeexpress.png" />
+    <Content Include="Images\kärnkaffe-mellanrost.png" />
+    <Content Include="Images\kärnkaffe-mörkrost.png" />
+    <Content Include="Images\kärnkaffe-skånerost.png" />
+    <Content Include="Images\mörk bakgrund.jpg" />
+    <Content Include="Images\simon i kassan.jpg" />
+    <Content Include="Images\smålands kafferosteri logo.jpg" />
+    <Content Include="Images\Småland_vapen.png" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
+    <None Include="Styles\google-fonts.css" />
+    <Content Include="Images\välpackat.png" />
+    <Content Include="Views\Pricelist\Index.cshtml" />
+    <Content Include="Views\Shared\PricelistItem.cshtml" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EmailController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PricelistController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Email.cs" />
+    <Compile Include="Models\PricelistItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\web.config" />
+    <None Include=".bowerrc" />
+    <None Include="bower.json" />
+    <None Include="NLog.config" />
+    <None Include="package.json" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="dist\js\app.js.map" />
+    <Content Include="dist\js\vendors.js.map" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="typings.json" />
+    <None Include="Styles\bootstrap-theme-3.3.6\.csscomb.json" />
+    <None Include="Styles\bootstrap-theme-3.3.6\.csslintrc" />
+    <None Include="Styles\bootstrap-theme-3.3.6\alerts.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\badges.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\bootstrap.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\breadcrumbs.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\button-groups.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\buttons.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\carousel.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\close.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\code.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\component-animations.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\dropdowns.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\forms.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\glyphicons.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\grid.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\input-groups.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\jumbotron.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\labels.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\list-group.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\media.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\alerts.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\background-variant.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\border-radius.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\buttons.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\center-block.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\clearfix.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\forms.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\gradients.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\grid-framework.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\grid.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\hide-text.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\image.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\labels.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\list-group.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\nav-divider.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\nav-vertical-align.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\opacity.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\pagination.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\panels.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\progress-bar.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\reset-filter.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\reset-text.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\resize.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\responsive-visibility.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\size.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\tab-focus.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\table-row.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\text-emphasis.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\text-overflow.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\mixins\vendor-prefixes.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\modals.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\navbar.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\navs.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\normalize.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\pager.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\pagination.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\panels.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\popovers.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\print.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\progress-bars.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\responsive-embed.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\responsive-utilities.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\scaffolding.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\tables.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\theme.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\thumbnails.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\tooltip.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\type.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\utilities.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\variables.less" />
+    <None Include="Styles\bootstrap-theme-3.3.6\wells.less" />
+    <None Include="Styles\coffeeshop-theme.less" />
+    <None Include="Styles\footer.less" />
+    <None Include="Styles\grid.less" />
+    <None Include="Styles\header.less" />
+    <None Include="Styles\navbar.less" />
+    <None Include="Styles\scaffolding.less" />
+    <None Include="Styles\utilities.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeShop.Lib\CoffeeShop.Lib.csproj">
+      <Project>{05268442-02b6-448e-949d-cf43ef6ce096}</Project>
+      <Name>CoffeeShop.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="App\App.ts" />
+    <TypeScriptCompile Include="App\Controllers\EmailController.ts" />
+    <TypeScriptCompile Include="App\Controllers\NavbarController.ts" />
+    <TypeScriptCompile Include="App\Dto\Email.ts" />
+    <TypeScriptCompile Include="App\external\susnet.d.ts" />
+    <TypeScriptCompile Include="App\Services\ConstantService.ts" />
+    <TypeScriptCompile Include="App\Services\EmailService.ts" />
+    <TypeScriptCompile Include="typings\browser.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52095</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52095/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

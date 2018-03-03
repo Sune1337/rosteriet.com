@@ -1,0 +1,36 @@
+﻿.navbar.navbar-default {
+    /* No border for navbar */
+    border: none;
+
+    /* Highlight navbar items that are hovered or active */
+    .navbar-nav,
+    .navbar-collapse.in .dropdown-menu {
+        &>.active>a,
+        &>li>a:hover {
+            text-shadow: 0 0 1px;
+        }
+    }
+
+    .navbar-collapse {
+        &.collapsing,
+        &.collapse.in {
+            /* Set background on navbar when it is collapsing. */
+            background-color: lighten(@body-bg, 10%);
+
+            /* Make position absolute so that navbar does not push content down on page */
+            position: absolute;
+            width: 100%;
+            z-index: @zindex-navbar;
+        }
+    }
+
+    /* Style headers in dropdown-menus */
+    .dropdown-menu .header {
+        margin: 0.5em;
+        font-weight: 500;
+    }
+
+    .navbar-toggle {
+        border: none;
+    }
+}

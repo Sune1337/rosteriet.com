@@ -1,0 +1,14 @@
+{
+  "name": "ASP.NET",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1",
+    "bootstrap": "3.3.6",
+    "angularjs-ie8-build": "1.4.7",
+    "angular-route": "1.5.5",
+    "jquery-autosize": "autosize#~1",
+    "html5shiv": "3.7.3",
+    "respond": "1.4.2",
+    "es5-shim": "4.5.8"
+  }
+}
