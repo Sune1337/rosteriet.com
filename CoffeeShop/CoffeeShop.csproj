@@ -20,7 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
     <UseGlobalApplicationHostFile />
     <Use64BitIISExpress />
   </PropertyGroup>
@@ -118,6 +118,56 @@
     <Content Include="App\Templates\Home.html" />
     <Content Include="App\Templates\Kaffe\Sortiment\Kärnkaffe.html" />
     <Content Include="App\Templates\Kaffe\Sortiment\LokaltProducerat.html" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-01-2733.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-12-2770.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2774.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2775.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2776.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2779.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2781.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2784.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2786.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2787.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2788.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2789.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2791.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2792.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2793.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-20-2801.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-20-2802.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-22-2803.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-22-2804.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-22-2805.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-22-2806.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-22-2807.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-22-2808.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-22-2810.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-22-2812.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-27-2844.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-01-2874.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-01-2877.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-01-2878.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-01-2879.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-01-2880.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-01-2881.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-01-2882.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-01-2883.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-06-2921.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-06-2923.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\beovox5000.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\butiken3.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\butiken3.png" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\butiken4.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\butiken4.png" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\butiken5.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\denondp51f.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\ecouton.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\garrardzero.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\marantzsd50.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\sb-m1000.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\sonykombo.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\technicsslb210.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\yamahakombo.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\åsedahifi2.png" />
     <Content Include="App\Templates\ÅsedaHIFI\Index.html" />
     <Content Include="dist\css\app.css" />
@@ -145,19 +195,50 @@
     <None Include="gulpfile.js" />
     <Content Include="Images\Bonamat_Freshmore_G.png" />
     <Content Include="Images\Bonamat_Mondo_2.png" />
+    <Content Include="Images\butiken6.jpg" />
+    <Content Include="Images\DK.jpg" />
+    <Content Include="Images\DK2vit.gif" />
+    <Content Include="Images\DKESP.jpg" />
+    <Content Include="Images\DKESP2.jpg" />
+    <Content Include="Images\DKplus.jpg" />
+    <Content Include="Images\DKplusPRESS.jpg" />
+    <Content Include="Images\DKPRESS.jpg" />
+    <Content Include="Images\DKvit.gif" />
     <Content Include="Images\dubbelknäppt.png" />
     <Content Include="Images\garanterat-certifierat.png" />
     <Content Include="Images\hantverk.jpg" />
+    <Content Include="Images\kaffeikassan.jpg" />
+    <Content Include="Images\KKcert.gif" />
+    <Content Include="Images\KKesp.gif" />
+    <Content Include="Images\KKmellan.gif" />
+    <Content Include="Images\KKskåne.gif" />
     <Content Include="Images\kärnkaffe-kaffeexpress.png" />
     <Content Include="Images\kärnkaffe-mellanrost.png" />
     <Content Include="Images\kärnkaffe-mörkrost.png" />
     <Content Include="Images\kärnkaffe-skånerost.png" />
+    <Content Include="Images\KärnkaffeEsp2.gif" />
+    <Content Include="Images\KärnkaffeMellan.gif" />
+    <Content Include="Images\KärnkaffeSkåne.gif" />
     <Content Include="Images\mörk bakgrund.jpg" />
+    <Content Include="Images\rostning.jpg" />
     <Content Include="Images\simon i kassan.jpg" />
+    <Content Include="Images\simonhifi.jpg" />
+    <Content Include="Images\simonikassanS.jpg" />
+    <Content Include="Images\SMK.jpg" />
+    <Content Include="Images\SMKCAPU.jpg" />
+    <Content Include="Images\SMKvit.gif" />
     <Content Include="Images\smålands kafferosteri logo.jpg" />
     <Content Include="Images\Småland_vapen.png" />
+    <Content Include="Images\Småland_vapen.svg" />
+    <Content Include="Images\SOhalv.jpg" />
+    <Content Include="Images\kärnkaffe.xcf" />
+    <Content Include="Images\logo.xcf" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Styles\google-fonts.css" />
+    <Content Include="Images\VP.jpg" />
+    <Content Include="Images\VPCAPU.jpg" />
+    <Content Include="Images\VPPRESS.jpg" />
+    <Content Include="Images\VPvit.gif" />
     <Content Include="Images\välpackat.png" />
     <Content Include="Views\Pricelist\Index.cshtml" />
     <Content Include="Views\Shared\PricelistItem.cshtml" />
@@ -320,7 +401,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52095</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
