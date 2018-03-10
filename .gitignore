@@ -11,3 +11,4 @@ CoffeeShop/App/**/*.js.map
 .vs
 *.user
 /CoffeeShop/package-lock.json
+/CoffeeShop/Logs
