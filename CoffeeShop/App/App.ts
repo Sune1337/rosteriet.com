@@ -31,13 +31,17 @@
                     {
                         templateUrl: "/App/Templates/Kaffe/Prislista.html"
                     })
-                .when("/DackeKulturFörening",
+                .when("/DackeKultur",
                     {
-                        templateUrl: "/App/Templates/DackeKulturFörening/Index.html"
-                })
+                        templateUrl: "/App/Templates/DackeKultur/Index.html"
+                   })
                 .when("/ÅsedaHIFI",
                     {
                         templateUrl: "/App/Templates/ÅsedaHIFI/Index.html"
+                    })
+                .when("/Nyheter",
+                    {
+                    templateUrl: "/App/Templates/Nyheter.html"
                     })
                 .otherwise({ redirectTo: "/" });
 

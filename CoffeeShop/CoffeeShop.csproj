@@ -111,14 +111,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\Templates\DackeKulturFörening\images\dacke kulturförening.png" />
+    <Content Include="App\Templates\DackeKultur\images\dackekultur.png" />
+    <Content Include="App\Templates\Nyheter.html" />
     <Content Include="App\Templates\Kontakt.html" />
-    <Content Include="App\Templates\DackeKulturFörening\Index.html" />
+    <Content Include="App\Templates\DackeKultur\Index.html" />
     <Content Include="App\Templates\EmailSent.html" />
     <Content Include="App\Templates\Home.html" />
     <Content Include="App\Templates\Kaffe\Sortiment\Kärnkaffe.html" />
     <Content Include="App\Templates\Kaffe\Sortiment\LokaltProducerat.html" />
-    <Content Include="App\Templates\Kaffe\Prislista.html" />
     <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-01-2733.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-12-2770.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\2018-02-15-2774.jpg" />
@@ -192,7 +192,7 @@
     <Content Include="dist\fonts\open-sans-v13-latin-regular.ttf" />
     <Content Include="dist\fonts\open-sans-v13-latin-regular.woff" />
     <Content Include="dist\fonts\open-sans-v13-latin-regular.woff2" />
-    <Content Include="App\Templates\DackeKulturFörening\images\dacke kulturförening.xcf" />
+    <Content Include="App\Templates\DackeKultur\images\dacke kulturförening.xcf" />
     <None Include="gulpfile.js" />
     <Content Include="Images\Bonamat_Freshmore_G.png" />
     <Content Include="Images\Bonamat_Mondo_2.png" />
