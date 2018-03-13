@@ -29,7 +29,7 @@
                     })
                 .when("/Kaffe/Prislista",
                     {
-                        templateUrl: "/Templates/Kaffe/Prislista"
+                        templateUrl: "/App/Templates/Kaffe/Prislista.html"
                     })
                 .when("/DackeKulturFörening",
                     {
