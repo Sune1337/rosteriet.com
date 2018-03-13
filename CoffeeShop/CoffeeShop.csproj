@@ -192,7 +192,7 @@
     <Content Include="dist\fonts\open-sans-v13-latin-regular.ttf" />
     <Content Include="dist\fonts\open-sans-v13-latin-regular.woff" />
     <Content Include="dist\fonts\open-sans-v13-latin-regular.woff2" />
-    <Content Include="App\Templates\DackeKultur\images\dacke kulturförening.xcf" />
+    <Content Include="App\Templates\DackeKultur\images\dackekultur.xcf" />
     <None Include="gulpfile.js" />
     <Content Include="Images\Bonamat_Freshmore_G.png" />
     <Content Include="Images\Bonamat_Mondo_2.png" />
@@ -221,6 +221,8 @@
     <Content Include="Images\KärnkaffeMellan.gif" />
     <Content Include="Images\KärnkaffeSkåne.gif" />
     <Content Include="Images\mörk bakgrund.jpg" />
+    <Content Include="Images\NOhalv.jpg" />
+    <Content Include="Images\NVhalv.jpg" />
     <Content Include="Images\rostning.jpg" />
     <Content Include="Images\simon i kassan.jpg" />
     <Content Include="Images\simonhifi.jpg" />
@@ -236,6 +238,7 @@
     <Content Include="Images\logo.xcf" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Styles\google-fonts.css" />
+    <Content Include="Images\SVhalv.jpg" />
     <Content Include="Images\VP.jpg" />
     <Content Include="Images\VPCAPU.jpg" />
     <Content Include="Images\VPPRESS.jpg" />
