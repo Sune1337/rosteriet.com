@@ -38,22 +38,20 @@
     @Html.SusnetCounter(ViewBag.SusnetCounterID as string)
 </head>
 <body>
-    <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
 (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+            js.src = 'https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.12';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- Your share button code -->
-    <div class="fb-share-button"
-         data-href="https://www.rosteriet.com"
-         data-layout="button_count">
+    <div class="fb-share-button" data-href="http://www.rosteriet.com" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.rosteriet.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Dela</a>
     </div>
+
     <div id="wrapper">
         <header class="fixed-top">
             <div class="gradient-in"></div>
