@@ -209,6 +209,7 @@
     <Content Include="Images\garanterat-certifierat.png" />
     <Content Include="Images\hantverk.jpg" />
     <Content Include="Images\kaffeikassan.jpg" />
+    <Content Include="Images\kartaSingle.png" />
     <Content Include="Images\KKcert.gif" />
     <Content Include="Images\KKesp.gif" />
     <Content Include="Images\KKmellan.gif" />
