@@ -196,6 +196,7 @@
     <None Include="gulpfile.js" />
     <Content Include="Images\Bonamat_Freshmore_G.png" />
     <Content Include="Images\Bonamat_Mondo_2.png" />
+    <Content Include="Images\bratta.jpg" />
     <Content Include="Images\butiken6.jpg" />
     <Content Include="Images\DK.jpg" />
     <Content Include="Images\DK2vit.gif" />
