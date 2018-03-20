@@ -194,6 +194,7 @@
     <Content Include="dist\fonts\open-sans-v13-latin-regular.woff2" />
     <Content Include="App\Templates\DackeKultur\images\dackekultur.xcf" />
     <None Include="gulpfile.js" />
+    <Content Include="App\Templates\DackeKultur\images\2018-03-20-3012.jpg" />
     <Content Include="Images\Bonamat_Freshmore_G.png" />
     <Content Include="Images\Bonamat_Mondo_2.png" />
     <Content Include="Images\bratta.jpg" />
