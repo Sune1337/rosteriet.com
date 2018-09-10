@@ -239,12 +239,14 @@
     <Content Include="Images\kärnkaffehelsingborg.jpg" />
     <Content Include="Images\KärnkaffeMellan.gif" />
     <Content Include="Images\KärnkaffeSkåne.gif" />
+    <Content Include="Images\linnea.jpg" />
     <Content Include="Images\mörk bakgrund.jpg" />
     <Content Include="Images\NOhalv.jpg" />
     <Content Include="Images\NVhalv.jpg" />
     <Content Include="Images\rostning.jpg" />
     <Content Include="Images\sillakröken.jpg" />
     <Content Include="Images\simon i kassan.jpg" />
+    <Content Include="Images\simon1.jpg" />
     <Content Include="Images\simonhifi.jpg" />
     <Content Include="Images\simonikassanS.jpg" />
     <Content Include="Images\SMK.jpg" />
