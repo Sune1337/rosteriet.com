@@ -112,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\Templates\DackeKultur\images\dackekultur.png" />
+    <Content Include="App\Templates\DackeKultur\images\reaper.jpg" />
     <Content Include="App\Templates\Nyheter.html" />
     <Content Include="App\Templates\Kontakt.html" />
     <Content Include="App\Templates\DackeKultur\Index.html" />
@@ -158,11 +159,13 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\2018-04-01-3100.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\akai001.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\beovox5000.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\bogen2.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\butiken3.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\butiken3.png" />
     <Content Include="App\Templates\ÅsedaHIFI\images\butiken4.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\butiken4.png" />
     <Content Include="App\Templates\ÅsedaHIFI\images\butiken5.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\cs505a.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\denondp51f.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\ecouton.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\EVhorn.jpg" />
