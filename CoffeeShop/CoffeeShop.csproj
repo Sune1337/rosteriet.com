@@ -158,6 +158,7 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\2018-03-06-2923.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\2018-04-01-3100.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\akai001.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\Beovox3700.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\beovox5000.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\bogen2.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\butiken3.jpg" />
@@ -179,12 +180,16 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20180526_141805.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20180526_142624.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\carlssonoa5.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\JamoJ120.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\marantzsd50.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\pl1800.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\pl1800b.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\PL70.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\pl70a.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sb-m1000.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\Seas.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\SonyAPM.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\SonyFull.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sonykombo.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sweetspot.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\technicsslb210.jpg" />
