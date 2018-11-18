@@ -169,8 +169,12 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\butikenA.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\cs505a.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\denondp51f.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\dual1214.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\ecouton.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\EVhorn.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\exclusivem5.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\exclusivem51.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\exclusivem52.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\garrardzero.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20180526_135852.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20180526_141559.jpg" />
@@ -185,6 +189,7 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\numark.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\pl1800.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\pl1800b.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\pl510.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\PL70.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\pl70a.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sb-m1000.jpg" />
@@ -194,6 +199,7 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\sonykombo.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sonyta1150.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sweetspot.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\sx626.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\technicsslb210.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\yamahakombo.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\åsedahifi2.png" />
