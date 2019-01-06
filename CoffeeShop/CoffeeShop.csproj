@@ -184,6 +184,13 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20180526_141805.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20180526_142624.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\carlssonoa5.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20190104_144312.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20190104_144323.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20190104_144427.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20190104_144433.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20190104_144438.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20190104_145941.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\IMG_20190104_150016.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\JamoJ120.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\marantzsd50.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\numark.jpg" />
@@ -201,6 +208,7 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\sweetspot.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sx626.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\technicsslb210.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\unamco.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\yamahakombo.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\åsedahifi2.png" />
     <Content Include="App\Templates\ÅsedaHIFI\Index.html" />
@@ -261,6 +269,7 @@
     <Content Include="Images\mörk bakgrund.jpg" />
     <Content Include="Images\NOhalv.jpg" />
     <Content Include="Images\NVhalv.jpg" />
+    <Content Include="Images\NyaTider2.jpg" />
     <Content Include="Images\rostning.jpg" />
     <Content Include="Images\sillakröken.jpg" />
     <Content Include="Images\simon i kassan.jpg" />
@@ -279,6 +288,7 @@
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Styles\google-fonts.css" />
     <Content Include="Images\SVhalv.jpg" />
+    <Content Include="Images\unamco.jpg" />
     <Content Include="Images\VP.jpg" />
     <Content Include="Images\VPCAPU.jpg" />
     <Content Include="Images\VPPRESS.jpg" />
