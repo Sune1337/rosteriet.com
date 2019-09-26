@@ -194,6 +194,7 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\JamoJ120.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\linn.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\luxor9381.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\marantzsd1000.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\marantzsd50.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\marlux.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\nad.jpg" />
@@ -208,6 +209,7 @@
     <Content Include="App\Templates\ÅsedaHIFI\images\Sansui101.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sb-m1000.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\Seas.jpg" />
+    <Content Include="App\Templates\ÅsedaHIFI\images\sharp.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\SonyAPM.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\SonyFull.jpg" />
     <Content Include="App\Templates\ÅsedaHIFI\images\sonykombo.jpg" />
