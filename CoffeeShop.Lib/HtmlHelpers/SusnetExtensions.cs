@@ -24,7 +24,7 @@
         $script.appendTo($body);
         $script.on(""load"", function() {{ $script.remove(); }});
         $script.attr(""type"", ""text/javascript"")
-            .attr(""src"", 'http://susnet.nu/addStatAction.do?id=' + susnet_counter_id + '&size=' + screen.width + 'x' + screen.height + '&referer=' + escape(document.referrer) + '&t' + new Date().getTime());
+            .attr(""src"", 'https://susnet.nu/stat?action=add&id=' + susnet_counter_id + '&sizex=' + screen.width + '&sizey=' + screen.height + '&referer=' + escape(document.referrer) + '&url=' + escape(window.location.href));
     }}
 </script>
 <!--SLUT Susnet BESÖKSREGISTRERINGSKOD -->
