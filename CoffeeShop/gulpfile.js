@@ -11,7 +11,7 @@ var less = require("gulp-less");
 var streamqueue = require("streamqueue");
 
 
-gulp.task("css-task",
+gulp.task("css-task", gulp.series(
     function () {
         var lessStream = gulp.src([
             "./Styles/bootstrap-theme-3.3.6/bootstrap.less",
@@ -22,7 +22,7 @@ gulp.task("css-task",
             "./Styles/*.css"
         ]);
 
-        streamqueue({ objectMode: true },
+        return streamqueue({ objectMode: true },
                 lessStream
                 .pipe(print())
                 .pipe(less()),
@@ -33,12 +33,13 @@ gulp.task("css-task",
             .pipe(uglifycss())
             .pipe(gulp.dest("dist/css"));
     }
+    )
 );
 
-gulp.task("vendors-task",
+gulp.task("vendors-task", gulp.series(
     function () {
         var vendorStream = gulp.src([
-            "./bower_components/jquery/dist/jquery.min.js", ,
+            "./bower_components/jquery/dist/jquery.min.js",
             "./bower_components/bootstrap/dist/js/bootstrap.min.js",
             "./bower_components/angularjs-ie8-build/dist/angular.min.js",
             "./bower_components/angular-route/angular-route.min.js",
@@ -52,9 +53,10 @@ gulp.task("vendors-task",
             .pipe(sourcemaps.write("."))
             .pipe(gulp.dest("dist/js"));
     }
+    )
 );
 
-gulp.task("spa-task",
+gulp.task("spa-task", gulp.series(
     function () {
         var appStream = gulp.src(["./app/**/*.js"]);
 
@@ -66,9 +68,10 @@ gulp.task("spa-task",
             .pipe(sourcemaps.write("."))
             .pipe(gulp.dest("dist/js"));
     }
+    )
 );
 
-gulp.task("fonts-task",
+gulp.task("fonts-task", gulp.series(
     function () {
         var fontsStream = gulp.src([
             "./bower_components/bootstrap/dist/fonts/*",
@@ -78,9 +81,10 @@ gulp.task("fonts-task",
         return fontsStream
             .pipe(gulp.dest("./dist/fonts/"));
     }
+    )
 );
 
-gulp.task("ie8-task",
+gulp.task("ie8-task", gulp.series(
     function () {
         var scriptsStream = gulp.src([
             "./bower_components/html5shiv/dist/html5shiv.min.js",
@@ -93,13 +97,15 @@ gulp.task("ie8-task",
             .pipe(concat("ie8.js"))
             .pipe(gulp.dest("dist/ie8"));
     }
+    )
 );
 
-gulp.task("clean",
+gulp.task("clean", gulp.series(
     function () {
         return gulp.src("dist", { read: false })
             .pipe(clean());
     }
+    )
 );
 
-gulp.task("all", ["css-task", "vendors-task", "spa-task", "fonts-task", "ie8-task"]);
+gulp.task("all", gulp.series(["css-task", "vendors-task", "spa-task", "fonts-task", "ie8-task"]));
